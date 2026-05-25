@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package grpc;
+
+service Naloga{
+
+ rpc Nekajz) returns (stream Sporocilo);
+
+}
+
+message Sporocilo{
+ string text = 1;
+}

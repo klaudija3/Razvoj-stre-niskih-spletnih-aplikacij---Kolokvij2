@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package grpc;
+
+message Empty {}
+
+message Note ...
+
+service ChatServer ...

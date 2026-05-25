@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package grpc;
+
+message Sporocilo{
+ string text = 1;
+}
+
+message SporociloInStevilo{
+ string drugi_tekst = 1;
+ string stevilo = 2;
+}
+
+service Naloga1{
+
+ rpc VrniSporocilo(Sporocilo) returns (Sporocilo);
+
+}

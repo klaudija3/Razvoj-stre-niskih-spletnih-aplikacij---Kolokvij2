@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package grpc;
+
+//Empty potrebujemo, če ne želimo poslati ničesar
+message Empty {}
+
+//Point naj bo float
+message Point {
+
+//PointIndex naj bo integer - s tem bo funkcija GetOne strežniku sporočila, katero zaporedno točko želimo
+message PointIndex {
+
+service Serve {
+    rpc SendOne //dopolnite
+    rpc SendMore //dopolnite
+    rpc GetOne //dopolnite
+    rpc GetAll //dopolnite
+}

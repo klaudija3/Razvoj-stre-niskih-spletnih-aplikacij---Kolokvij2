@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package grpc;
+
+service Example{
+ rpc SendRandomText(Empty) returns (Text);
+ rpc StreamRandomInt(Empty) returns (stream Int);
+ rpc ObtainRandomFloatStream(stream Floating) returns (Empty);
+}
+
+message Empty{}
+
+
+message Text{
+ string val = 2;
+}
+
+message Int{
+ int32  val = 1;
+}
+
+message Floating{
+ float val = 1;
+}
+
+
